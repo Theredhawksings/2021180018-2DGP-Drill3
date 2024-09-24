@@ -18,9 +18,7 @@ def draw_boy(x,y):
     delay(0.01)
 
 def run_top():
-
-    for x in range(0,800,10):
-        
+    for x in range(0,800,10)
         draw_boy(x,550)
         
         
@@ -84,6 +82,7 @@ def run_diagonal_bottom_right():
 def run_bottom_triangle():
     for x in range(800,0,-10):
         draw_boy(x,0)
+
 
 def run_triagnle():
     run_diagonal_top_left()
