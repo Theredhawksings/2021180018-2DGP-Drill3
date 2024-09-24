@@ -81,14 +81,15 @@ def run_diagonal_top_left():
         delay(0.01)
 
     
-def run_bottom_triagnle():
-    for y in range(600,0,-10):
+def run_diagonal_bottom_right():
+    for x in range(400,800,10):
         clear_canvas_now()
-        draw_boy(400,y)
+        draw_boy(x,-3/2*x+1200)
         delay(0.01)
 
+
 def run_bottom_triangle():
-    for x in range(400,0,-10):
+    for x in range(800,0,-10):
         clear_canvas_now()
         draw_boy(x,0)
         delay(0.01)
@@ -97,7 +98,7 @@ def run_bottom_triangle():
 
 def run_triagnle():
     run_diagonal_top_left()
-    run_bottom_triagnle()
+    run_diagonal_bottom_right()
     run_bottom_triangle()
 
     
