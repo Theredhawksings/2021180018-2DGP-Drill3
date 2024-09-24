@@ -9,9 +9,21 @@ open_canvas()
 grass = load_image('grass.png')
 boy = load_image('character.png')
 
+def run_top():
+    
+def run_right()
+    
+def run_bottom()
+
+def run_left()
+
 
 
 def run_rectangle():
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
     pass
 
 
