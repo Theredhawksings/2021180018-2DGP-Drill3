@@ -73,17 +73,43 @@ def run_circle():
         delay(0.01)
 
 
+
+def run_diagonal_top_left():
+    for x in range(0,400,10):
+        clear_canvas_now()
+        draw_boy(x,x/2*3)
+        delay(0.01)
+
+    
+def run_bottom_triagnle():
+    for y in range(600,0,-10):
+        clear_canvas_now()
+        draw_boy(400,y)
+        delay(0.01)
+
+def run_bottom_triangle():
+    for x in range(400,0,-10):
+        clear_canvas_now()
+        draw_boy(x,0)
+        delay(0.01)
+
+
+
 def run_triagnle():
-    pass
+    run_diagonal_top_left()
+    run_bottom_triagnle()
+    run_bottom_triangle()
+
+    
+
 
 
     
 while(1):
     clear_canvas_now()
-    #run_rectangle()
-    #run_circle()
+    run_rectangle()
+    run_circle()
     run_triagnle()
     
-    break
 
 close_canvas()
