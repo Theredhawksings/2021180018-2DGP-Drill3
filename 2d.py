@@ -73,13 +73,16 @@ def run_circle():
         delay(0.01)
 
 
+def run_triagnle():
+    pass
+
+
+    
 while(1):
     clear_canvas_now()
-    run_rectangle()
-    
-    
+    #run_rectangle()
     #run_circle()
-    
+    run_triagnle()
     
     break
 
